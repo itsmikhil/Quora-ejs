@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #2b2828;
+}
+.title {
+  color: rgb(138, 8, 8);
+  font-size: 3vw;
+}
+.post {
+  background-color: blanchedalmond;
+  /* height: 50px;
+  width: 100%; */
+  border:1px solid white;
+  margin-top: 2vw;
+}
+.username{
+    margin-bottom: 2vh;
+    background-color: transparent;
+}
+.content{
+    background-color: transparent;
+    margin-bottom: 2vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: underline;
+}

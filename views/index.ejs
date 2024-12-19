@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1 class="title">Quora</h1>
+        <a href="/posts/new">New post</a>
+    </nav>
+    
+    <% posts.forEach(post => { %>
+     <div class="post">
+        <h3 class="username">@<%= post.username %></h3>
+        <h4 class="content"><%= post.content %></h4>
+        <a href="/posts/<%= post.id %>">See in detail</a>
+        <a href="/posts/<%= post.id %>/edit">Edit</a>
+        <form method="post" action="/posts/<%= post.id %>/?_method=DELETE">
+            <button>DELETE</button>
+        </form>
+     </div>
+    <% }) %>
+</body>
+</html>
